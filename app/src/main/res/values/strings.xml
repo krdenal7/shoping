@@ -1,0 +1,19 @@
+<resources>
+    <string name="path_db">/data/data/com.kds.multiapps.shoping/databases/</string>
+    <string name="app_name">Compras</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Añadirlista">Añadir lista</string>
+    <string name="Añadirproducto">Añadir producto</string>
+    <string name="Nosehaagregadoningunalista">No se ha agregado ningúna lista</string>
+    <string name="Nosehaagregadoningunproducto">No se ha agregado ningún producto</string>
+    <string name="ceros">$00.00</string>
+    <string name="Total_puntos">Total:</string>
+    <string name="Descripcionimg">Descripcion</string>
+    <string name="Nombre_puntos">Nombre:</string>
+    <string name="Escribircodigo">Escribir código</string>
+    <string name="Escanearcodigo">Escanear código</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="Kg">Kg</string>
+    <string name="Precio">Precio</string>
+    <string name="Seccion">Sección</string>
+</resources>

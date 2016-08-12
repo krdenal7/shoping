@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Walmart">https://www.walmart.com.mx/</string>
+    <string-array name="RequestWalmart">
+        <item>super/Busqueda.aspx</item>
+        <item>Text</item>
+        <item>Departamento</item>
+    </string-array>
+
+</resources>
