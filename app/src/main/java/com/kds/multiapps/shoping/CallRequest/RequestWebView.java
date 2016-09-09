@@ -19,7 +19,7 @@ public class RequestWebView {
     private final Context mContext;
     private final WebView webView;
     private final String TAG=getClass().getSimpleName();
-    RequestWebViewListener listener;
+    private RequestWebViewListener listener;
 
     public  RequestWebView(Context mContext){
            this.mContext=mContext;

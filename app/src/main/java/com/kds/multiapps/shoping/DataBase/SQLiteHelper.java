@@ -69,7 +69,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
             outputStream.flush();
             outputStream.close();
             inputStream.close();
+            ReiniciarIndices();
             CargarProductos();
+            CargarSeccion();
             return true;
 
         } catch (IOException e) {
@@ -98,6 +100,40 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void CargarSeccion(){
+        try {
+            InputStream stream=context.getAssets().open("DataBase/secciones.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+            String valor;
+            SQLiteDatabase db=getWritableDatabase();
+            db.beginTransaction();
+
+            while ((valor = reader.readLine()) != null) {
+                ContentValues values=new ContentValues();
+                values.put("seccion",valor);
+                db.insert("tb_seccion",null,values);
+            }
+            reader.close();
+            db.setTransactionSuccessful();
+            db.endTransaction();
+            db.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void ReiniciarIndices(){
+        SQLiteDatabase db=getWritableDatabase();
+        if(db!=null){
+            db.execSQL("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='tb_productos'");
+            db.execSQL("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='tb_lista_compras'");
+            db.execSQL("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='tb_lista_productos'");
+            db.execSQL("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='tb_seccion'");
+            db.execSQL("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='tb_unidad'");
         }
     }
 

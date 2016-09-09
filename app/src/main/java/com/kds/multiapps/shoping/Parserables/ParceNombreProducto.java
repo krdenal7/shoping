@@ -17,7 +17,7 @@ public class ParceNombreProducto implements Parcelable {
         NombreProducto = nombreProducto;
     }
 
-    protected ParceNombreProducto(Parcel in) {
+    private ParceNombreProducto(Parcel in) {
         IdProducto = in.readInt();
         NombreProducto = in.readString();
     }

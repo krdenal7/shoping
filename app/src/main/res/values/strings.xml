@@ -16,4 +16,11 @@
     <string name="Kg">Kg</string>
     <string name="Precio">Precio</string>
     <string name="Seccion">Sección</string>
+    <string name="Nombreproducto">Nombre producto</string>
+    <string name="Precio_">Precio:</string>
+    <string name="Subtotal_">Subtotal:</string>
+    <string name="Seccion_">Sección:</string>
+    <string name="Carnes">Carnes</string>
+    <string name="Cantidad_">Cantidad:</string>
+    <string name="_1">1</string>
 </resources>

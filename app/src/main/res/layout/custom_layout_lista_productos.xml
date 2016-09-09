@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    style="@style/MyCardViewStyleMin">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:text="@string/Nombreproducto"
+          android:id="@+id/txtNombre"
+          android:textStyle="bold" />
+
+      <GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/Precio_"
+              android:id="@+id/textView3"
+              android:layout_column="0"
+              android:layout_row="2"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/ceros"
+              android:id="@+id/txtPrecio"
+              android:layout_column="1"
+              android:layout_row="2" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/Subtotal_"
+              android:id="@+id/textView4"
+              android:layout_column="2"
+              android:layout_row="2"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/ceros"
+              android:id="@+id/txtSubtotal"
+              android:layout_column="3"
+              android:layout_row="2" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/Seccion_"
+              android:id="@+id/textView5"
+              android:layout_column="0"
+              android:layout_row="0"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/Carnes"
+              android:id="@+id/txtSeccion"
+              android:layout_column="1"
+              android:layout_row="0" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/Cantidad_"
+              android:id="@+id/textView6"
+              android:layout_row="1"
+              android:layout_column="0"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/_1"
+              android:id="@+id/txtPiezas"
+              android:layout_row="1"
+              android:layout_column="1" />
+
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imgbEliminar"
+              android:layout_column="4"
+              android:layout_row="1"
+              android:layout_gravity="right"
+              android:background="@android:color/transparent"
+              android:src="@drawable/delete"
+              android:contentDescription="@string/Descripcionimg"/>
+
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imgbEditar"
+              android:layout_column="4"
+              android:layout_row="0"
+              android:layout_gravity="right"
+              android:background="@android:color/transparent"
+              android:src="@drawable/ic_lapiz"
+              android:contentDescription="@string/Descripcionimg"/>
+
+      </GridLayout>
+  </LinearLayout>
+</android.support.v7.widget.CardView>

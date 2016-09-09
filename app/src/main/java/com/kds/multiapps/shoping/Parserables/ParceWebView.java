@@ -11,9 +11,9 @@ import com.kds.multiapps.shoping.CallRequest.RequestWebView;
  */
 public class ParceWebView implements Parcelable {
 
-    RequestWebView requestWebView;
+    private RequestWebView requestWebView;
 
-    public ParceWebView(RequestWebView requestWebView) {
+    private ParceWebView(RequestWebView requestWebView) {
         this.requestWebView = requestWebView;
     }
 
@@ -35,7 +35,7 @@ public class ParceWebView implements Parcelable {
         dest.writeParcelable(dest.readParcelable(ParceWebView.class.getClassLoader()), flags);
     }
 
-    protected ParceWebView(Parcel in) {
+    private ParceWebView(Parcel in) {
         this.requestWebView = in.readParcelable(RequestWebView.class.getClassLoader());
     }
 

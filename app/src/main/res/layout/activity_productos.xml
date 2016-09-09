@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="@string/Añadirlista"
+                android:text="@string/Añadirproducto"
                 android:gravity="center_vertical"
                 android:layout_weight="1"
                 android:textSize="16sp" />
@@ -118,7 +118,8 @@
                 android:layout_margin="5dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:gravity="right" />
+                android:gravity="right"
+                android:id="@+id/txtTotal" />
 
         </LinearLayout>
 

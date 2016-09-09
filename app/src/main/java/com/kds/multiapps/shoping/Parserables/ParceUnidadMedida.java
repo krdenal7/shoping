@@ -20,7 +20,7 @@ public class ParceUnidadMedida implements Parcelable {
         this.abreviatura=abreviatura;
     }
 
-    protected ParceUnidadMedida(Parcel in) {
+    private ParceUnidadMedida(Parcel in) {
         IdUnidad = in.readInt();
         NombreUnidad = in.readString();
     }
